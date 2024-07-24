@@ -38,7 +38,7 @@ template <typename T, typename... Args>
 void formatter(const char* names, T value, Args... args) {
     cerr << "\e[1;31m"<< "debug: [" ;
     print_debug(names,value, args...);
-    cerr <<  "]"  << "\e[0m";
+    cerr <<  "]"  << "\e[0m\n";
 }
 
 #define debug(...) formatter(#__VA_ARGS__, __VA_ARGS__)
