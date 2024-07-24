@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0cdb61b4-f78d-4669-9bf1-d0dac2f69c87)# competitive_programming_tamplates
+# competitive_programming_tamplates
 thanks to [cyano](https://github.com/stdcyanout/) for sharing the original tamplate(though some of them work suck in my computer)
 this is a cometitive programming tamplates for me to easily share and use
 
@@ -16,6 +16,7 @@ this is a cometitive programming tamplates for me to easily share and use
 # What i have change
 * unsign main()-> undef int int main(){#define int int64_t}
 * use recursion to make c++14 version debug to replace the fold-expression
+ * ![image](https://github.com/user-attachments/assets/0cdb61b4-f78d-4669-9bf1-d0dac2f69c87)??? 
 * repair the syntax error in safe define
 
 #how to use
