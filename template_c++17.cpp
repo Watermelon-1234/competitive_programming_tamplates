@@ -20,11 +20,14 @@ using namespace std;
 typedef tree<int,null_type,less<int>,rb_tree_tag, tree_order_statistics_node_update> ordered_set;
 typedef tree<int,null_type,less_equal<int>,rb_tree_tag, tree_order_statistics_node_update> ordered_multiset;
 
+#define EXPAND(x) #x
+#define STRINGIFY(x) EXPAND(x)
+
 // C++17 variadic debug function with fold expression
 template <typename... T>
 void debug(T... args) {
     cerr << "\e[1;31m" << "debug: [";
-    ((cerr << #args << "=" << args << ", "), ...);
+    ((cerr << STRINGIFY(args) << "=" << args << ", "), ...);
     cerr.seekp(-2, std::ios_base::cur); // 移動指針位置來移除最後的逗號和空格
     cerr << "]\e[0m\n";
 }
@@ -32,7 +35,7 @@ void debug(T... args) {
 // Orange function for range printing
 template <typename T>
 void orange(T L, T R) {
-    cerr << "\e[1;31morange: ";
+    cerr << "\e[1;31morange: [";
     for (int f = 0; L != R; ++L) cerr << (f++ ? " " : "") << *L;
     cerr << "\e[0m\n";
 }
