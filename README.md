@@ -28,3 +28,21 @@ this is a cometitive programming tamplates for me to easily share and use
     * L=the end pointer
     * ex: vector<int> a(4,4); orange(a.begin(),a.end());
 * rep foo oof all btw  is easy to understand in code
+
+
+# updates
+## 20240731:
+```cpp=
+template <typename T>
+T& inpr()
+{
+    static T tmp;
+    cin>>tmp;
+    return tmp;
+}
+```
+usage example:
+```cpp=
+queue<int> a;
+a.push(inpr<int>());
+```
