@@ -40,6 +40,14 @@ void orange(T L, T R) {
     cerr << "\e[0m\n";
 }
 
+template <typename T>
+T& inpr()
+{
+    static T tmp;
+    cin>>tmp;
+    return tmp;
+}
+
 #undef int
 int main() {
     #define int int64_t
