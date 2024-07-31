@@ -41,6 +41,14 @@ void formatter(const char* names, T value, Args... args) {
     cerr <<  "]"  << "\e[0m\n";
 }
 
+template <typename T>
+T& inpr()
+{
+    static T tmp;
+    cin>>tmp;
+    return tmp;
+}
+
 #define debug(...) formatter(#__VA_ARGS__, __VA_ARGS__)
 
 // Orange function for range printing
